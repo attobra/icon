@@ -11,7 +11,7 @@ h1, h2, p{
 }
 
 p{
-  font-size: 26px;
+  font-size: 16px;
 }
 
 /* headings */
@@ -61,6 +61,11 @@ p{
 .connect-button{
   background-color: #D9381F;
   color: #F0EDEB;
+}
+
+.connect-button:hover{
+  background-color: #617052;
+  color:#F0EDEB;
 }
 
 .service-button{
@@ -115,11 +120,11 @@ p{
 
 .underlay{
   position: relative;
-  margin-bottom: 30%;
-  z-index: 1;
+  margin-bottom: 100px;
+  z-index: 0;
 }
 
-
+/*
 .sunday-image{
   width: 100%;
   position: relative;
@@ -132,15 +137,30 @@ p{
   z-index: 3;
   left: 5%;
   top: 70%;
+} */
+
+.sunday-image{
+  width:500px;
+  position: absolute;
 }
+
+.pattern{
+  width:70px;
+  position: absolute;
+  top: 400px;
+  margin-bottom: 40px;
+}
+
+.sundays-buttons{
+  margin-top: 50px;
+}
+
 .sundays-time{
   padding-top: 30%;
   padding-bottom: 20px;
 }
 
-.sundays-time p{
-  font-size: 1.7rem;
-}
+
 
 
 
@@ -224,6 +244,16 @@ footer.colored-section{
     text-align: center;
   }
 
+  .btn{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .small-header .btn{
+    margin-left:5px;
+  }
+
   .list-unstyled{
     padding-top: 2%;
   }
@@ -232,23 +262,16 @@ footer.colored-section{
 
 /* on Tablet and Phones */
 @media(max-width: 768px){
-  .btn{
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   .small-header{
     margin-top: 55%;
     padding-top: 10%;
   }
 
-
-  .pattern{
-    top: 250px;
-    width: 70px;
-    left: 0px;
-  }
+.sundays-time{
+  margin-top: 300px;
+  margin-left:100px;
+}
 
   .last-pic{
     display: none;
@@ -277,27 +300,19 @@ footer.colored-section{
     display:block;
   }
 
-  .pattern{
-    top: 150px;
-    width: 70px;
-    left: 0px;
-  }
-
-
 }
 
 /* on larger desktop */
-@media (max-width: 1680px) {
+@media (max-width: 2680px) {
   .dots-header{
     left: 50%;
   }
 
   .sunday-image{
-    right: 30%;
+    right: 10%;
   }
 
   .dots-image{
-    /* width: 2000px; */
     width: 1024px;
 
   }
